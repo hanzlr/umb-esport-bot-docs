@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Syarat & Ketentuan — UMB E-SPORT BOT</title>
+<title>Terms of Service — UMB E-SPORT BOT</title>
 <style>
   :root {
     --bg: #0e1116;
@@ -42,9 +42,30 @@
   .meta {
     color: var(--muted);
     font-size: 14px;
-    margin-bottom: 36px;
-    border-bottom: 1px solid var(--rule);
+    margin-bottom: 24px;
+  }
+  .lang-switch {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
     padding-bottom: 24px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .lang-btn {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    color: var(--muted);
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+  }
+  .lang-btn.active {
+    background: var(--accent);
+    color: #1a1300;
+    border-color: var(--accent);
   }
   h2 {
     font-size: 18px;
@@ -74,73 +95,159 @@
     color: var(--muted);
     font-size: 13px;
   }
+  #lang-id { display: none; }
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <p class="eyebrow">UMB E-SPORT BOT</p>
-  <h1>Syarat & Ketentuan Layanan</h1>
-  <p class="meta">Berlaku efektif sejak 17 Juni 2026 · Dikembangkan oleh hanz (Nexalab) · Discord: kiko.lr</p>
+  <h1 id="page-title">Terms of Service</h1>
+  <p class="meta">Effective since June 17, 2026 · Developed by hanz (Nexalab) · Discord: kiko.lr</p>
 
-  <p>Selamat datang di <strong>UMB E-SPORT BOT</strong> ("Bot", "kami"). Dengan menambahkan, mengakses, atau menggunakan Bot ini di server Discord manapun, kamu ("pengguna", "kamu") dianggap telah membaca, memahami, dan menyetujui seluruh Syarat & Ketentuan berikut. Jika kamu tidak setuju dengan salah satu ketentuan di bawah, harap tidak menggunakan Bot ini.</p>
-
-  <h2>1. Tentang Layanan</h2>
-  <p>UMB E-SPORT BOT adalah bot Discord yang dikembangkan untuk komunitas UMB E-SPORT, menyediakan berbagai fitur hiburan dan utilitas server, termasuk namun tidak terbatas pada:</p>
-  <ul>
-    <li>Sistem tiket bantuan (Open Ticket)</li>
-    <li>Leveling, XP, dan Ranking</li>
-    <li>Mata uang virtual, Daily Reward, dan sistem Bank dengan bunga mingguan</li>
-    <li>Mini game (Dice, Coinflip, Slot, Blackjack)</li>
-    <li>Profile Card, Badge, dan Statistik pengguna</li>
-    <li>Loot Box, Fishing, Inventory, dan Shop System</li>
-    <li>Sistem Equip, Boost, dan Event</li>
-    <li>Web Dashboard beserta Admin Tools</li>
-    <li>Fitur tambahan seperti Roast Me dan Help Command</li>
-  </ul>
-  <p>Bot ini terus dalam pengembangan, dan fitur baru dapat ditambahkan, diubah, atau dihentikan dari waktu ke waktu tanpa pemberitahuan sebelumnya.</p>
-
-  <h2>2. Persyaratan Usia & Kepatuhan pada Discord</h2>
-  <p>Penggunaan Bot ini tunduk pada <a href="https://discord.com/terms" target="_blank" rel="noopener">Discord Terms of Service</a> dan <a href="https://discord.com/guidelines" target="_blank" rel="noopener">Discord Community Guidelines</a>. Kamu harus memenuhi syarat usia minimum yang ditetapkan Discord untuk memiliki akun dan menggunakan layanan Discord.</p>
-
-  <h2>3. Mata Uang Virtual & Mini Game</h2>
-  <div class="note">
-    Seluruh mata uang, item, badge, loot box, dan aset virtual lainnya dalam Bot ini hanya berlaku di dalam ekosistem Bot dan <strong>tidak memiliki nilai uang sungguhan</strong>. Aset ini tidak dapat ditukar, dijual, atau dikonversi menjadi uang tunai atau barang/jasa di dunia nyata.
+  <div class="lang-switch">
+    <button class="lang-btn active" id="btn-en" onclick="showLang('en')">English</button>
+    <button class="lang-btn" id="btn-id" onclick="showLang('id')">Bahasa Indonesia</button>
   </div>
-  <p>Mini game seperti Dice, Coinflip, Slot, dan Blackjack disediakan murni sebagai hiburan dalam bentuk simulasi menggunakan mata uang virtual. Mini game ini <strong>bukan perjudian</strong> karena tidak melibatkan transaksi uang sungguhan dalam bentuk apapun, baik untuk bertaruh maupun untuk menerima hasil.</p>
 
-  <h2>4. Tata Tertib Pengguna</h2>
-  <p>Saat menggunakan Bot, kamu setuju untuk tidak:</p>
-  <ul>
-    <li>Mengeksploitasi bug, celah sistem, atau kerentanan apapun pada Bot untuk keuntungan tidak adil (misalnya menggandakan mata uang atau item);</li>
-    <li>Menggunakan automation, self-bot, script, atau alat pihak ketiga apapun untuk berinteraksi dengan Bot;</li>
-    <li>Menyalahgunakan sistem tiket, leveling, ekonomi, atau fitur lainnya dengan tujuan spam atau merugikan pengguna lain;</li>
-    <li>Mencoba mengakses, merusak, atau mengganggu jalannya Bot maupun Web Dashboard tanpa izin.</li>
-  </ul>
-  <p>Pelanggaran terhadap ketentuan ini dapat berakibat pada pencabutan akses ke fitur Bot, penghapusan data progres (mata uang, level, inventory), atau pemblokiran dari penggunaan Bot, atas kebijakan tim pengembang.</p>
+  <!-- ENGLISH VERSION -->
+  <div id="lang-en">
 
-  <h2>5. Hak Kekayaan Intelektual</h2>
-  <p>Seluruh kode, desain, branding, dan konten orisinal dari UMB E-SPORT BOT adalah milik tim pengembang, hanz (Nexalab). Kamu tidak diperkenankan menyalin, mendistribusikan ulang, atau membuat turunan dari Bot ini tanpa izin tertulis dari tim pengembang.</p>
+    <p>Welcome to <strong>UMB E-SPORT BOT</strong> ("the Bot", "we"). By adding, accessing, or using this Bot on any Discord server, you ("user", "you") acknowledge that you have read, understood, and agree to be bound by the following Terms of Service. If you do not agree with any part of these terms, please do not use this Bot.</p>
 
-  <h2>6. Web Dashboard & Admin Tools</h2>
-  <p>Akses ke Web Dashboard dan Admin Tools hanya diberikan kepada pihak yang berwenang (admin/moderator server terkait). Penyalahgunaan akses admin, termasuk mengubah data pengguna lain tanpa alasan yang sah, dapat dikenakan sanksi sesuai kebijakan tim pengembang.</p>
+    <h2>1. About the Service</h2>
+    <p>UMB E-SPORT BOT is a Discord bot built for the UMB E-SPORT community, providing a range of entertainment and utility features, including but not limited to:</p>
+    <ul>
+      <li>Support ticket system (Open Ticket)</li>
+      <li>Leveling, XP, and Ranking</li>
+      <li>Virtual currency, Daily Reward, and a Bank system with weekly interest</li>
+      <li>Mini games (Dice, Coinflip, Slot, Blackjack)</li>
+      <li>Profile Card, Badge, and user Statistics</li>
+      <li>Loot Box, Fishing, Inventory, and Shop System</li>
+      <li>Equip, Boost, and Event systems</li>
+      <li>Web Dashboard with Admin Tools</li>
+      <li>Additional features such as Roast Me and a Help Command</li>
+    </ul>
+    <p>The Bot is continuously under development, and features may be added, changed, or removed at any time without prior notice.</p>
 
-  <h2>7. Batasan Tanggung Jawab</h2>
-  <p>Bot ini disediakan "sebagaimana adanya" (as-is) tanpa jaminan apapun, baik tersurat maupun tersirat, termasuk namun tidak terbatas pada jaminan ketersediaan, keakuratan data, atau bebas dari gangguan teknis. Kami tidak bertanggung jawab atas kerugian, kehilangan data, atau dampak apapun yang timbul dari penggunaan atau ketidakmampuan menggunakan Bot ini.</p>
+    <h2>2. Age Requirement & Discord Compliance</h2>
+    <p>Use of this Bot is subject to <a href="https://discord.com/terms" target="_blank" rel="noopener">Discord's Terms of Service</a> and <a href="https://discord.com/guidelines" target="_blank" rel="noopener">Discord's Community Guidelines</a>. You must meet Discord's minimum age requirement to hold an account and use Discord's services.</p>
 
-  <h2>8. Perubahan Layanan & Ketentuan</h2>
-  <p>Kami berhak mengubah, menambah, atau menghentikan fitur Bot kapan saja. Syarat & Ketentuan ini juga dapat diperbarui dari waktu ke waktu; versi terbaru akan selalu tersedia di halaman ini. Dengan tetap menggunakan Bot setelah perubahan diberlakukan, kamu dianggap menyetujui ketentuan yang telah diperbarui.</p>
+    <h2>3. Virtual Currency & Mini Games</h2>
+    <div class="note">
+      All currency, items, badges, loot boxes, and other virtual assets in this Bot are valid only within the Bot's ecosystem and have <strong>no real-world monetary value</strong>. These assets cannot be exchanged, sold, or converted into real money or real-world goods/services.
+    </div>
+    <p>Mini games such as Dice, Coinflip, Slot, and Blackjack are provided purely for entertainment, simulated using virtual currency. These mini games are <strong>not gambling</strong>, as they do not involve any real-money transaction, either for placing a wager or for receiving an outcome.</p>
 
-  <h2>9. Penghentian Akses</h2>
-  <p>Kami berhak menghentikan atau membatasi akses pengguna terhadap Bot, baik sementara maupun permanen, jika ditemukan pelanggaran terhadap Syarat & Ketentuan ini atau Discord Terms of Service.</p>
+    <h2>4. User Conduct</h2>
+    <p>While using the Bot, you agree not to:</p>
+    <ul>
+      <li>Exploit bugs, system loopholes, or vulnerabilities in the Bot for unfair advantage (e.g. duplicating currency or items);</li>
+      <li>Use automation, self-bots, scripts, or any third-party tool to interact with the Bot;</li>
+      <li>Abuse the ticket, leveling, economy, or other systems for the purpose of spam or to harm other users;</li>
+      <li>Attempt to access, damage, or disrupt the operation of the Bot or its Web Dashboard without authorization.</li>
+    </ul>
+    <p>Violations of these terms may result in revocation of access to the Bot's features, removal of progress data (currency, level, inventory), or being blocked from using the Bot, at the development team's discretion.</p>
 
-  <h2>10. Kontak</h2>
-  <p>Jika ada pertanyaan, masukan, atau laporan terkait Bot ini, silakan hubungi kami melalui email: <a href="mailto:raihan.ramandha@nexalab.my.id">raihan.ramandha@nexalab.my.id</a></p>
+    <h2>5. Intellectual Property</h2>
+    <p>All original code, design, branding, and content of UMB E-SPORT BOT belong to the development team, hanz (Nexalab). You may not copy, redistribute, or create derivative works of this Bot without written permission from the development team.</p>
 
-  <footer>
-    © 2026 UMB E-SPORT BOT — Dikembangkan oleh hanz (Nexalab). Seluruh hak cipta dilindungi.
-  </footer>
+    <h2>6. Web Dashboard & Admin Tools</h2>
+    <p>Access to the Web Dashboard and Admin Tools is granted only to authorized parties (server admins/moderators). Misuse of admin access, including modifying other users' data without a legitimate reason, may be subject to sanctions at the development team's discretion.</p>
+
+    <h2>7. Limitation of Liability</h2>
+    <p>This Bot is provided "as-is" without any warranty of any kind, whether express or implied, including but not limited to warranties of availability, data accuracy, or freedom from technical disruption. We are not liable for any loss, data loss, or other consequence arising from your use or inability to use this Bot.</p>
+
+    <h2>8. Changes to the Service & These Terms</h2>
+    <p>We reserve the right to change, add, or discontinue Bot features at any time. These Terms of Service may also be updated from time to time; the latest version will always be available on this page. Continued use of the Bot after changes take effect constitutes acceptance of the revised terms.</p>
+
+    <h2>9. Termination of Access</h2>
+    <p>We reserve the right to suspend or terminate a user's access to the Bot, either temporarily or permanently, if a violation of these Terms or Discord's Terms of Service is found.</p>
+
+    <h2>10. Contact</h2>
+    <p>If you have any questions, feedback, or reports regarding this Bot, please contact us at: <a href="mailto:raihan.ramandha@nexalab.my.id">raihan.ramandha@nexalab.my.id</a></p>
+
+    <footer>
+      © 2026 UMB E-SPORT BOT — Developed by hanz (Nexalab). All rights reserved.
+    </footer>
+
+  </div>
+
+  <!-- INDONESIAN VERSION -->
+  <div id="lang-id">
+
+    <p>Selamat datang di <strong>UMB E-SPORT BOT</strong> ("Bot", "kami"). Dengan menambahkan, mengakses, atau menggunakan Bot ini di server Discord manapun, kamu ("pengguna", "kamu") dianggap telah membaca, memahami, dan menyetujui seluruh Syarat & Ketentuan berikut. Jika kamu tidak setuju dengan salah satu ketentuan di bawah, harap tidak menggunakan Bot ini.</p>
+
+    <h2>1. Tentang Layanan</h2>
+    <p>UMB E-SPORT BOT adalah bot Discord yang dikembangkan untuk komunitas UMB E-SPORT, menyediakan berbagai fitur hiburan dan utilitas server, termasuk namun tidak terbatas pada:</p>
+    <ul>
+      <li>Sistem tiket bantuan (Open Ticket)</li>
+      <li>Leveling, XP, dan Ranking</li>
+      <li>Mata uang virtual, Daily Reward, dan sistem Bank dengan bunga mingguan</li>
+      <li>Mini game (Dice, Coinflip, Slot, Blackjack)</li>
+      <li>Profile Card, Badge, dan Statistik pengguna</li>
+      <li>Loot Box, Fishing, Inventory, dan Shop System</li>
+      <li>Sistem Equip, Boost, dan Event</li>
+      <li>Web Dashboard beserta Admin Tools</li>
+      <li>Fitur tambahan seperti Roast Me dan Help Command</li>
+    </ul>
+    <p>Bot ini terus dalam pengembangan, dan fitur baru dapat ditambahkan, diubah, atau dihentikan dari waktu ke waktu tanpa pemberitahuan sebelumnya.</p>
+
+    <h2>2. Persyaratan Usia & Kepatuhan pada Discord</h2>
+    <p>Penggunaan Bot ini tunduk pada <a href="https://discord.com/terms" target="_blank" rel="noopener">Discord Terms of Service</a> dan <a href="https://discord.com/guidelines" target="_blank" rel="noopener">Discord Community Guidelines</a>. Kamu harus memenuhi syarat usia minimum yang ditetapkan Discord untuk memiliki akun dan menggunakan layanan Discord.</p>
+
+    <h2>3. Mata Uang Virtual & Mini Game</h2>
+    <div class="note">
+      Seluruh mata uang, item, badge, loot box, dan aset virtual lainnya dalam Bot ini hanya berlaku di dalam ekosistem Bot dan <strong>tidak memiliki nilai uang sungguhan</strong>. Aset ini tidak dapat ditukar, dijual, atau dikonversi menjadi uang tunai atau barang/jasa di dunia nyata.
+    </div>
+    <p>Mini game seperti Dice, Coinflip, Slot, dan Blackjack disediakan murni sebagai hiburan dalam bentuk simulasi menggunakan mata uang virtual. Mini game ini <strong>bukan perjudian</strong> karena tidak melibatkan transaksi uang sungguhan dalam bentuk apapun, baik untuk bertaruh maupun untuk menerima hasil.</p>
+
+    <h2>4. Tata Tertib Pengguna</h2>
+    <p>Saat menggunakan Bot, kamu setuju untuk tidak:</p>
+    <ul>
+      <li>Mengeksploitasi bug, celah sistem, atau kerentanan apapun pada Bot untuk keuntungan tidak adil (misalnya menggandakan mata uang atau item);</li>
+      <li>Menggunakan automation, self-bot, script, atau alat pihak ketiga apapun untuk berinteraksi dengan Bot;</li>
+      <li>Menyalahgunakan sistem tiket, leveling, ekonomi, atau fitur lainnya dengan tujuan spam atau merugikan pengguna lain;</li>
+      <li>Mencoba mengakses, merusak, atau mengganggu jalannya Bot maupun Web Dashboard tanpa izin.</li>
+    </ul>
+    <p>Pelanggaran terhadap ketentuan ini dapat berakibat pada pencabutan akses ke fitur Bot, penghapusan data progres (mata uang, level, inventory), atau pemblokiran dari penggunaan Bot, atas kebijakan tim pengembang.</p>
+
+    <h2>5. Hak Kekayaan Intelektual</h2>
+    <p>Seluruh kode, desain, branding, dan konten orisinal dari UMB E-SPORT BOT adalah milik tim pengembang, hanz (Nexalab). Kamu tidak diperkenankan menyalin, mendistribusikan ulang, atau membuat turunan dari Bot ini tanpa izin tertulis dari tim pengembang.</p>
+
+    <h2>6. Web Dashboard & Admin Tools</h2>
+    <p>Akses ke Web Dashboard dan Admin Tools hanya diberikan kepada pihak yang berwenang (admin/moderator server terkait). Penyalahgunaan akses admin, termasuk mengubah data pengguna lain tanpa alasan yang sah, dapat dikenakan sanksi sesuai kebijakan tim pengembang.</p>
+
+    <h2>7. Batasan Tanggung Jawab</h2>
+    <p>Bot ini disediakan "sebagaimana adanya" (as-is) tanpa jaminan apapun, baik tersurat maupun tersirat, termasuk namun tidak terbatas pada jaminan ketersediaan, keakuratan data, atau bebas dari gangguan teknis. Kami tidak bertanggung jawab atas kerugian, kehilangan data, atau dampak apapun yang timbul dari penggunaan atau ketidakmampuan menggunakan Bot ini.</p>
+
+    <h2>8. Perubahan Layanan & Ketentuan</h2>
+    <p>Kami berhak mengubah, menambah, atau menghentikan fitur Bot kapan saja. Syarat & Ketentuan ini juga dapat diperbarui dari waktu ke waktu; versi terbaru akan selalu tersedia di halaman ini. Dengan tetap menggunakan Bot setelah perubahan diberlakukan, kamu dianggap menyetujui ketentuan yang telah diperbarui.</p>
+
+    <h2>9. Penghentian Akses</h2>
+    <p>Kami berhak menghentikan atau membatasi akses pengguna terhadap Bot, baik sementara maupun permanen, jika ditemukan pelanggaran terhadap Syarat & Ketentuan ini atau Discord Terms of Service.</p>
+
+    <h2>10. Kontak</h2>
+    <p>Jika ada pertanyaan, masukan, atau laporan terkait Bot ini, silakan hubungi kami melalui email: <a href="mailto:raihan.ramandha@nexalab.my.id">raihan.ramandha@nexalab.my.id</a></p>
+
+    <footer>
+      © 2026 UMB E-SPORT BOT — Dikembangkan oleh hanz (Nexalab). Seluruh hak cipta dilindungi.
+    </footer>
+
+  </div>
 
 </div>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
+    document.getElementById('lang-id').style.display = lang === 'id' ? 'block' : 'none';
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-id').classList.toggle('active', lang === 'id');
+    document.getElementById('page-title').textContent = lang === 'en' ? 'Terms of Service' : 'Syarat & Ketentuan Layanan';
+    document.documentElement.lang = lang;
+  }
+</script>
+
 </body>
 </html>
